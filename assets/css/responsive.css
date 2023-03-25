@@ -1,0 +1,102 @@
+/* Responsive for PC */
+@media (min-width: 1024px) {
+    .hide-on-pc{
+        display: none;
+    }
+}
+/* Responsive for tablet & mobile */
+@media (max-width:1023px) {
+    .hide-on-tablet-mobile{
+        display: none;
+    }
+    :root{
+        --height-header: 68px;
+        --height-navbar: 0px;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+    }
+    .box__input-search{
+        font-size: 1.5rem;
+    }
+    .box__input-history{
+        width: 100%;
+    }
+    .content{
+        margin-top: 100px;
+    }
+}
+/* Responsive for Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet{
+        display: none;
+    }
+    .navsearch-cart{
+        margin: 0 20px 0 40px;
+    }
+    .box__input-list{
+        width: 115px;
+        top: calc(100% + 4px);
+    }
+
+}
+/* Responsive for mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile{
+        display: none;
+    }
+    .navsearch{
+        margin: 0 30px;
+    }
+    .navsearch-box{
+        display: none;
+        z-index: 1;
+        position: fixed;
+        top: var(--height-header);
+        left: 0;
+        right: 0;
+        animation: mobile__fadein linear 0.25s;
+    }
+    .box__input-history{
+        position: fixed;
+        top: calc(var(--height-short-bar) + var(--height-header));
+        width: 100%;
+        left: 0;
+        box-shadow: 0 1px 1px solid var(--box-shadow-color);
+    }
+    .navsearch-logo__image{
+        margin: 0;
+    }
+    .navsearch-cart{
+        margin: 0;
+    }
+    .navsearch-cart__product::after{
+        right: 30px;
+    }
+    .label-search{
+        display: block;
+    }
+    .navsearch-cart__product{
+        position: fixed;
+        width: 100%;
+        top: var(--height-header);
+        left: 0;
+        right: 0;
+    }
+    .cart__product-list{
+        max-height: 30vh;
+        overflow-y: auto;
+    }
+    .product__page-item{
+        padding: 4px;
+    }
+    .footer__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
