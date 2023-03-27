@@ -1,4 +1,7 @@
 /* Make Header */
+.main{
+    overflow: hidden;
+}
 .header{
     background: linear-gradient(180deg, #f53e2d,#fe6433);
     height: var(--height-header);

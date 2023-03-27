@@ -93,6 +93,7 @@
     }
     .product__page-item{
         padding: 4px;
+        font-size: 1.2rem;
     }
     .footer__item{
         display: flex;
