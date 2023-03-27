@@ -1,3 +1,24 @@
+/* Responsive for PC LOW*/
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .product__infor-title{
+        font-size: 1.2rem;
+    }
+    .product__infor-voucher {
+        font-size: 0.8rem;
+    }
+    .product__info-prize {
+        font-size: 1.3rem;
+    }
+    .infor-vote__star {
+        font-size: 0.7rem;
+    }
+    .product__infor-vote {
+        font-size: 1rem;
+    }
+    .product__infot-address {
+        font-size: 1rem;
+    }
+}
 /* Responsive for PC */
 @media (min-width: 1024px) {
     .hide-on-pc{
@@ -28,6 +49,10 @@
     }
     .content{
         margin-top: 100px;
+    }
+    .navsearch-cart__product::before{
+        height: 50px;
+        top: -30px;
     }
 }
 /* Responsive for Tablet */

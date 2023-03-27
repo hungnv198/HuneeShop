@@ -540,6 +540,7 @@
 }
 .header__short-bar-item.header__short-bar-item--active{
     color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
 }
 .header__short-bar-item::after{
     position: absolute;
@@ -613,6 +614,9 @@
     max-width: 100%;
     overflow-x: auto;
     margin-bottom: 20px;
+}
+.tablet-mobile__category::-webkit-scrollbar{
+    display: none;
 }
 .tablet-mobile__category-item{
     flex-shrink: 0;
